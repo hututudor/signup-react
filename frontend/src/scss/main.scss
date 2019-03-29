@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'flex';
+@import 'form';
+@import 'home';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  background-color: $grey-050;
+  color: $grey-900;
+}
+
+/*
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+*/
